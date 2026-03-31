@@ -6,3 +6,4 @@ streamlit
 scikit-learn
 openpyxl
 sqlalchemy
+psycopg2-binary
