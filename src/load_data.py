@@ -1,12 +1,16 @@
 import pandas as pd
 from sqlalchemy import create_engine
 
+
 def conectar_db():
-    engine = create_engine("postgresql://Posgrest:Pg123456@localhost/promedios")  # puedes cambiar a PostgreSQL
+    engine = create_engine("postgresql://Posgres:Pg123456@localhost/promedios")  # puedes cambiar a PostgreSQL
     return engine
 
-def cargar_estudiantes(engine):
+def cargar_estudiantesbd(engine):
     return pd.read_sql("SELECT * FROM estudiantes", engine)
+
+def cargar_estudiantes():
+    return pd.read_csv("data/estudiantes.csv")
 
 def cargar_notas_csv():
     return pd.read_csv("data/notas.csv")
