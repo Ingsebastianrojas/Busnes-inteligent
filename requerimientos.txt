@@ -1,8 +1,8 @@
-pandas
-numpy
-matplotlib
-plotly
 streamlit
-scikit-learn
-openpyxl
+pandas
+plotly
 sqlalchemy
+psycopg2-binary
+openpyxl
+scikit-learn
+numpy
