@@ -12,7 +12,7 @@ sys.path.insert(0, BASE_DIR)
 
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+import plotly.express  as px
 
 from src.preproces import procesar_datos
 from src.risk_model import RiskModel
